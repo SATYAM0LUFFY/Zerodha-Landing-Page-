@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    height: 12vh;
+    width: 100vw;
+    border-bottom: 4px solid #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 20vh;
+    margin-bottom: 3vh;
+}
+nav  img{
+    width: 20vh;
+}
+.nav2 .links{
+   display: flex;
+   gap: 7vh;
+}
+.nav2{
+    display: flex;
+}
+.links h1{
+    font-size: 2.3vh;
+    font-weight: 400 ;
+    color: grey;
+}
+nav .nav2 .links h1 a:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+i{
+    font-size: 3.5vh;
+    padding-left: 7vh;
+}
+i:hover{
+    cursor: pointer;
+}
+.landingimg img {
+    height:  50vh;
+    width: 750px;
+}
+.landingtext h1 , h2 {
+    font-weight: 500;
+    text-align: center;
+    margin: 3vh;
+    color: #666666;
+    font-size: 3vh;
+}
+.landingtext h1 {
+    color: #424242;
+    font-size: 7vh;
+}
+
+.landing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.signupbutton button{
+    color: white;
+    background-color: royalblue;
+    height: 60px;
+    width: 180px;
+    border-radius: 5px;
+    border: none;
+    font-size: 3vh;
+    font-weight: 500;
+}
+.signupbutton button:hover {
+    background-color: #424242;
+    cursor: pointer;
+}
+.iconMenu{
+    height: 100px;
+    width: 700px;
+    background-color: white; 
+    position: fixed;
+    top: 12vh;
+    right: 20vh;
+    z-index: 1;
+    display: flex;
+    gap: 120px;
+    padding: 0px 10vw;
+    padding-left: 5vw;
+    border: 4px solid #f5f5f5;
+    border-top: 0;
+    display: none;
+}
+
+.iconMenu .links{
+    display: none;
+}
+@media (max-width : 950px){
+    .nav2 .links{
+        display: none;
+    }
+    nav{
+        padding: 0vh 10vh;
+        margin-bottom: 5vh;
+    }
+    .landingimg img {
+        height:  30vh;
+        width: 90vw;
+    }
+    .iconMenu{
+        height:40vh ;
+        width: 80vw;
+        background-color: white; 
+        position: fixed;
+        top: 12vh;
+        right: 2vh;
+        z-index: 1;
+        display: flex;
+        gap: 8vw;
+        padding: 0px 10vw;
+        padding-left: 5vw;
+        border: 4px solid #f5f5f5;
+        border-top: 0;
+        display: none;
+    }
+    .iconMenu .links{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        
+    }
+    .iconMenu .logo{
+        background-color: red;
+    }
+
+}
+
